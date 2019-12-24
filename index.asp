@@ -42,13 +42,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="post.html">Sample Post</a>
+                        <a class="nav-link" href="index.asp">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="login.asp">Login</a>
@@ -72,7 +66,7 @@
             </div>
         </div>
     </header>
-    <form method="POST" class="col-12 align-self-center" style="width: 80%; padding-left: 200px;">
+    <form method="POST" class="col-12 align-self-center" style="width: 87%; padding-left: 200px;">
         <div class="container text-center">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12 text-center">
@@ -133,8 +127,8 @@
                         <div class="card-deck">
                             <%do while Not rsa.EOF%>
                             <div class="card">
-                                <img class="card-img-top" src="/images/<% Response.write(rsa("DuongDanAnh")) %>"
-                                    width="300px" height="200px" style="padding-left:30px;padding-right:30px">
+                                <a href="/detail.asp?title=<% Response.write(rsa("TieuDe")) %>"><img class="card-img-top" src="/images/<% Response.write(rsa("DuongDanAnh")) %>" alt="This picture is not Available"
+                                    width="300px" height="200px" style="padding-left:30px;padding-right:30px;margin-top:30px" ></a>
                                 <div class="card-body">
                                     <h5 class="card-title"><% Response.write(rsa("TieuDe")) %></h5>
                                     <ul class="list-group">

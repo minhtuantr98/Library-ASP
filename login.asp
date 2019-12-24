@@ -19,9 +19,8 @@
     If result.EOF Then 
     Response.write("<script>alert('Dang nhap Khong thanh cong')</script>")
     else 
+    Session("user")=username
     Response.redirect("admin.asp")
-    Response.write("<script>alert('Dang nhap thanh cong')</script>")
-  
     End If
     
 %>
